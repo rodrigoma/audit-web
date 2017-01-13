@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>Validate POC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="validating.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Validate POC</h1>
+        <ul class='validates'>
+            <% validates.forEach(function(validate, index){ %>
+            <li class='error' id='<%= validate.id %>'>
+                <span class='title'><%= validate.id %></span>
+            </li>
+            <% }) %>
+        </ul>
+    </body>
+</html>
