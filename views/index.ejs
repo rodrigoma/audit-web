@@ -15,6 +15,7 @@
             <% validates.forEach(function(validate, index){ %>
             <li class='error' id='<%= validate.id %>'>
                 <span class='title'><%= validate.id %></span>
+                <span class='timer' id='timer<%= validate.id %>'></span>
             </li>
             <% }) %>
         </ul>
