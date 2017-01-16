@@ -3,11 +3,11 @@ $(document).ready(function () {
     var socket = io();
 
 	socket.on('error', function(validate) {
-		$(".validates").prepend("<li class='error' id='" + validate.id + "'>" +
-                "<span class='title'>" + validate.id + "</span> "+
+		$(".validates").prepend("<div class='error' id='" + validate.id + "'>" +
+                "<span class='title'>" + validate.id + "</span><br>"+
                 "<span class='timer' id='timer" + validate.id + "'></span>"+
-                "</li>");
-	    
+                "</div>");
+
 		$('#' + validate.id).each(function () {
 			var timer = $(this).children("#timer" + validate.id);
 		    

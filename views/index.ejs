@@ -11,13 +11,14 @@
     </head>
     <body>
         <h1>Validate POC</h1>
-        <ul class='validates'>
+        <div class='validates'>
             <% validates.forEach(function(validate, index){ %>
-            <li class='error' id='<%= validate.id %>'>
-                <span class='title'><%= validate.id %></span>
+            <div class='error' id='<%= validate.id %>'>
+                <span class='title'><%= validate.id %></span><br>
                 <span class='timer' id='timer<%= validate.id %>'></span>
-            </li>
+            </div>
             <% }) %>
-        </ul>
+        </div>
+
     </body>
 </html>

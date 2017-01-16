@@ -1,45 +1,31 @@
-body{
+body {
   font-family:arial,sans-serif;
+  margin: 40px;
 }
 
-ul.validates {
-  margin: 1em;
-  padding: 0;
-  list-style-type: none;
+.ok {
+  background-color: #126d15;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 50%;
+  text-align: center;
 }
 
-/*li.validate {
-  min-height: 90px;
+.error {
+  background-color: #a01708;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 50%;
+  text-align: center;
 }
 
-li.validate:nth-child(odd) {
-  background-color:#eaecee;
-}*/
-
-/*OK*/
-li.ok {
-  min-height: 90px;
-  background-color:#126d15;
-  border-style: solid;
-  border-color: green;
-}
-
-/*error*/
-li.error {
-  min-height: 90px;
-  background-color:#a01708;
-  border-style: solid;
-  border-color: red;
-}
-
-.title {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 90px;
-}
-
-.timer {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 90px;
+.validates {
+  width: 600px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(10, 115px);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
 }
